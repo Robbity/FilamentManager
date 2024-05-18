@@ -62,6 +62,7 @@ const FilamentControl = ({ filamentId }) => {
         total: updated.filamentTotal,
       });
       setIsEditing(false);
+      setSelectedRefill(null); // Deselect refill buttons
       setError(null);
       console.log("Update successful:", updated);
     } catch (error) {

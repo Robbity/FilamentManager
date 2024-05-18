@@ -1,0 +1,115 @@
+@font-face {
+  font-family: poppins;
+  src: url(../public/fonts_short/Poppins-Regular.ttf);
+}
+
+.poppins {
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(../public/fonts_short/Poppins-SemiBold.ttf);
+}
+
+.poppins-bold {
+  font-family: poppins-bold;
+}
+
+@font-face {
+  font-family: rubik;
+  src: url(../public/fonts_short/Rubik-Regular.ttf);
+}
+
+.rubik {
+  font-family: rubik;
+}
+
+@font-face {
+  font-family: rubik-bold;
+  src: url(../public/fonts_short/Rubik-SemiBold.ttf);
+}
+
+.rubik-bold {
+  font-family: rubik-bold;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-unit {
+  text-align: center;
+  padding-right: 1.5rem;
+  width: 5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  appearance: none;
+}
+
+.unit {
+  position: absolute;
+  right: 0.5rem;
+  pointer-events: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.input-with-unit:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.icon-large {
+  transform: scale(1.4);
+}
+
+.box {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.box.collapsed {
+  max-height: 500px;
+}
+
+.box.expanded {
+  max-height: 560px;
+}
+
+.hidden-button {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  transition: opacity 0s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.visible-button {
+  opacity: 1;
+  height: auto;
+  padding: 1rem 0;
+  transition: opacity 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.selected {
+  background-color: rgb(30 41 59);
+  color: #fff;
+}
+
+.save-button {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.save-button:hover {
+  background-color: #c2e1ff;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
